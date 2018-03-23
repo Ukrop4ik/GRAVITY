@@ -136,7 +136,10 @@ public class GameController : MonoBehaviour {
 
         return _dist;
     }
-
+    public Rigidbody GetShipBody()
+    {
+        return _playership.GetComponent<Rigidbody>();
+    }
     public float GetMaxDist()
     {
         if (_dist > _maxdist)
