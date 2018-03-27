@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour {
 
     private void Update()
     {
-        _cameraTransform.position = new Vector3(_shipTransform.position.x + _camOffset.x, _shipTransform.position.y + _camOffset.y, -_zOffset);
+        _cameraTransform.position = new Vector3(_shipTransform.position.x + _camOffset.x, _shipTransform.position.y + _camOffset.y, _camOffset.z);
 
   
        if(_shipTransform.position.y != _yBuffer)

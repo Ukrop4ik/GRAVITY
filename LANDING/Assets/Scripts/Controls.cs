@@ -19,7 +19,7 @@ public class Controls : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetAxis("Vertical") != 0)
+        if (Input.GetAxis("Vertical") != 0 && _game.GetFuel() > 0)
         {
             _soplo.SetActive(true);
         }
