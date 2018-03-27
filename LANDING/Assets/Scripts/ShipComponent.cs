@@ -19,7 +19,8 @@ public class ShipComponent : MonoBehaviour
         _HP -= value;
         if (_HP <= 0)
         {
-            _obj.SetActive(false);
+            gameObject.AddComponent<Rigidbody>();
+            transform.SetParent(null);
         }
     }
 }

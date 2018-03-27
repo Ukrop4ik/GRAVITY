@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour {
     private float _speed;
     [SerializeField]
     private float _alt;
+    [SerializeField]
+    private float _maxalt;
 
     [SerializeField]
     private Transform _planet;
@@ -110,6 +112,15 @@ public class GameController : MonoBehaviour {
     public void SetFuel(float value = 0)
     {
         _fuel = value;
+    }
+
+    public float GetMaxAlt()
+    {
+        return _maxalt;
+    }
+    public void SetMaxAlt(float value = 0)
+    {
+        _maxalt = value;
     }
 
     public float GetFuelMull()
